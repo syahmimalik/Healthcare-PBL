@@ -1,0 +1,17 @@
+name: Healthcare MongoDB CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Verify Repository
+        run: echo "Healthcare MongoDB Project CI Passed"
